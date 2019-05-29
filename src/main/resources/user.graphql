@@ -1,0 +1,12 @@
+schema {
+    query: UserQuery
+}
+type UserQuery{
+    user(id:Long) :User
+}
+type User{
+    id:String!
+    username:String
+    password:String
+    name:String
+}
